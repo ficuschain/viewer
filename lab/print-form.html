@@ -1,0 +1,35 @@
+<html>
+ <head>
+        <title>GeoExt PrintExtent Example</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="../lib/extjs/resources/css/ext-all-gray.css">
+		<link rel="stylesheet" type="text/css" href="../lib/openlayers/theme/default/style.css" />
+	
+		<!-- JavaScript -->
+		<script type="text/javascript" src="../lib/extjs/ext-all-debug.js"></script>
+		<script type="text/javascript" src="../lib/openlayers/OpenLayers.debug.js"></script>
+		<script type="text/javascript" src="../lib/geoext/geoext.js"></script>
+
+        <script type="text/javascript" src="print-form.js"></script>
+        
+        <!-- The script below will load the capabilities of the print service
+             and save them into the global printCapabilities variable. Instead
+             of this, the PrintProvider can be configured with a url and take
+             care of fetching the capabilities. -->
+        <!--<script type="text/javascript" src="http://demo.opengeo.org/geoserver/pdf/info.json?var=printCapabilities"></script>-->
+		
+		<script type="text/javascript" src="http://202.90.149.233:8082/geoserver/pdf/info.json?var=printCapabilities"></script>
+
+    </head>
+    <body>
+        <h1>Advanced Printing with Special Form Fields</h1>
+        <p>This example shows the how to accomplish advanced printing, with a
+        form controlling parameters for the
+        <a href="http://trac.mapfish.org/trac/mapfish/wiki/PrintModuleInstallation">MapFish</a>
+        or <a href="http://docs.geoserver.org/stable/en/user/community/printing/">GeoServer</a>
+        print module.</p>
+        <p>The js is not minified so it is readable. See <a href="print-form.js">print-form.js</a>.</p>
+        <div id="content"></div>
+    </body>
+</html>

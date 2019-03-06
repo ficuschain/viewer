@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Philippine Geoportal: skeleton</title>
+
+	<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../lib/extjs/resources/css/ext-all-gray.css">
+    <link rel="stylesheet" type="text/css" href="../lib/openlayers/theme/default/style.css" />
+	<link rel="stylesheet" type="text/css" href="../lib/geoext/resources/css/popup.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/pgp.css">
+	
+	<!-- JavaScript -->
+    <script type="text/javascript" src="../lib/extjs/ext-all-debug.js"></script>
+	<script type="text/javascript" src="../lib/openlayers/OpenLayers.debug.js"></script>
+	<script type="text/javascript" src="../lib/geoext/geoext.js"></script>
+	
+	<!-- Main entry -->
+    <script type="text/javascript" src="walkthrough2.js"></script>
+	
+	
+	<link href="../lib/jquery/intro/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/jquery/intro/assets/css/demo.css" rel="stylesheet">
+    <link href="../lib/jquery/intro/introjs.min.css" rel="stylesheet">
+	
+	
+	
+	
+</head>
+<body>
+<div id='mapContainer'></div>
+</body>
+
+
+
+<script type="text/javascript" src="../lib/jquery/intro/intro.min.js"></script>	
+	<script>
+		
+		var intro = introJs();
+		intro.setOptions({
+		steps: [
+				{
+					element: '#mapContainer',
+					intro: "This is the <b>test</b> button."
+				},
+				{
+					element: '#button-1018-btnIconEl',
+					intro: "Ok, <i>wasn't</i> that fun?",
+					position: 'right'
+				}
+			]
+		}); 
+		
+		intro.start();		
+		
+	</script>
+
+
+</html>
